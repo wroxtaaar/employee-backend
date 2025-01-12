@@ -20,7 +20,6 @@ public class EmployeeController {
 
     private final EmployeeService employeeService;
 
-
     @Autowired
     public EmployeeController(EmployeeService employeeService) {
         this.employeeService = employeeService;
@@ -44,10 +43,9 @@ public class EmployeeController {
         return ResponseEntity.ok(allEmployees);
     }
 
-
     @PutMapping("/update/{id}")
     public ResponseEntity<EmployeeDTO> updatedEmployee(@PathVariable Long id,
-                                                       @RequestBody EmployeeDTO updatedEmployeeDto) {
+            @RequestBody EmployeeDTO updatedEmployeeDto) {
         EmployeeDTO employeeDTO = employeeService.updateEmployeeById(updatedEmployeeDto, id);
         return ResponseEntity.ok(employeeDTO);
     }

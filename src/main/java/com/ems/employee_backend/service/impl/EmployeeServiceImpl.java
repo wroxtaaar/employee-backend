@@ -39,7 +39,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public List<EmployeeDTO> getAllEmployees() {
         List<Employee> allEmployees = employeeRepository.findAll();
-//        return allEmployees.stream().map((e) -> EmployeeMapper.mapToEmployeeDTO(e)).collect(Collectors.toList());
+        // return allEmployees.stream().map((e) ->
+        // EmployeeMapper.mapToEmployeeDTO(e)).collect(Collectors.toList());
         return allEmployees.stream().map(EmployeeMapper::mapToEmployeeDTO).collect(Collectors.toList());
 
     }
@@ -59,13 +60,11 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public void deleteEmployeeById(Long id) {
-        Employee employee = employeeRepository.findById(id).orElseThrow(
-                () -> new ResourceNotFoundException("Employee does not exist with given id: " + id)
-        );
+        employeeRepository.findById(id).orElseThrow(
+                () -> new ResourceNotFoundException("Employee does not exist with given id: " + id));
 
         employeeRepository.deleteById(id);
 
     }
-
 
 }

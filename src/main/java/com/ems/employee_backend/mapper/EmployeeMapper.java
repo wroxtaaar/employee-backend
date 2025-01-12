@@ -3,8 +3,6 @@ package com.ems.employee_backend.mapper;
 import com.ems.employee_backend.dto.EmployeeDTO;
 import com.ems.employee_backend.entity.Employee;
 
-import java.util.Optional;
-
 public class EmployeeMapper {
 
     public static EmployeeDTO mapToEmployeeDTO(Employee employee) {
