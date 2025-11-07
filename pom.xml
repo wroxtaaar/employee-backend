@@ -8,11 +8,11 @@
 		<version>3.4.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.pokemon</groupId>
-	<artifactId>pokemon</artifactId>
+	<groupId>com.ems</groupId>
+	<artifactId>employee-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>pokemon</name>
-	<description>Pokemon project for Spring Boot</description>
+	<name>employee-backend</name>
+	<description>Employee Management project for Spring Boo</description>
 	<url/>
 	<licenses>
 		<license/>
