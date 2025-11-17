@@ -85,8 +85,6 @@ The service will start on default port 8080 (or as configured).
 | PUT    | `/employees/{id}`    | Update an existing employee  |
 | DELETE | `/employees/{id}`    | Delete an employee           |
 
-> *(Update according to your controller mappings if needed.)*
-
 ---
 
 ## ✅ Learning Outcomes
